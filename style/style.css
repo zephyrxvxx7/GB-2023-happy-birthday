@@ -125,7 +125,7 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
+  top: 50px;
   left: 41.5%;
   /* transform: scale(0.1); */
 }
@@ -227,6 +227,12 @@ body {
   font-weight: lighter;
 }
 
+.nine p.replay {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-top: auto;
+}
+
 #replay {
   z-index: 3;
   cursor: pointer;
@@ -235,7 +241,7 @@ body {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    left: 31%;
   }
 }
 
@@ -280,8 +286,8 @@ body {
   }
 
   .six .hat {
-    width: 50px;
-    top: -20px;
+    top: 5px;
+    left: 15%;
   }
 
   .wish-hbd {

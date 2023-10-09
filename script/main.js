@@ -29,6 +29,7 @@ const animationTimeline = () => {
   // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
+  const outro = document.getElementsByClassName("outro")[0];
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
@@ -37,6 +38,10 @@ const animationTimeline = () => {
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
     .join("</span><span>")}</span`;
+
+  outro.innerHTML = `<br>${outro.innerHTML
+    .split(" ")
+    .join("</br><br>")}</br>`
 
   const ideaTextTrans = {
     opacity: 0,
